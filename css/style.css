@@ -1,0 +1,1558 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#container_Principal {
+    margin: 0 auto;
+}
+
+body {
+    background: rgb(25, 24, 24);
+    overflow-x: hidden;
+}
+
+/****************************** INICIO SEÇÃO HOME ******************************/
+
+#container_Home {
+    width: 100%;
+    height: 100vh;
+    background: url(../imagens/img-home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caixa_localizacao {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.caixa_logo {
+    width: 106px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_logo h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 23px;
+    color: rgb(172, 118, 18);
+}
+
+.localizacao {
+    width: 270px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contato {
+    width: 154px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.email {
+    width: 200px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caixa_icone {
+    width: 325px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.contato_local {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(172, 118, 18);
+}
+
+.icones {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(172, 118, 18);
+}
+
+header {
+    width: 740px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: rgb(174, 196, 218);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.caixa_descricao_home {
+    width: 800px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.titulo_home {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo_home h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 51.9px;
+    padding: 0 50px;
+    color: #ffffff;
+}
+
+.titulo_home span {
+    color: rgb(172, 118, 18);
+}
+
+.descricao_home {
+    width: 650px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao_home p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #dfdfdf;
+    padding: 0 50px;
+}
+
+.caixa_btn_home {
+    padding: 0 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.caixa_btn_home button {
+    padding: 10px 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background: rgb(172, 118, 18);
+    color: rgb(25, 24, 24);
+    border: none;
+    cursor: pointer;
+}
+
+.caixa_btn_home button:hover {
+    box-shadow:
+    1px 1px rgb(172, 118, 18),
+    2px 2px rgb(172, 118, 18),
+    3px 3px rgb(172, 118, 18);
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    background: transparent;
+    border: 1px solid rgb(172, 118, 18);
+    color: rgb(172, 118, 18);
+    transition: all 0.9s;
+}
+
+@media screen and (min-width: 431px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .caixa_logo h3 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: 40px;
+        position: absolute;
+        right: 10px;
+        width: 80px;
+    }
+
+    .localizacao, .contato, .email, .caixa_icone, .icones {
+        display: none;
+    }
+
+    .navegacao {
+        display: none;
+    }
+
+    .btn-abrir-menu i {
+        color: #fff;
+        font-size: 40px;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+    }
+
+    .menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        height: 100vh;
+        width: 0%;
+        z-index: 99999;
+        overflow: hidden;
+        transition: .7s;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu {
+        display: block;
+    }
+
+    .navegacao-mobile ul {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .navegacao-mobile ul li a {
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .navegacao-mobile ul li a:hover {
+        color: #a16325;
+    }
+
+    .overlay-menu {
+        background-color: #00000096;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+    }
+
+    .menu-mobile .btn-fechar i {
+        color: #a16325;
+        position: absolute;
+        right: 0;
+        font-size: 25px;
+        padding: 10px 5%;
+    }
+
+    #container_Home {
+        height: 85vh;
+    }
+
+    .caixa_descricao_home {
+        width: 429px;
+        height: 500px;
+        margin-top: -20px;
+    }
+
+    .titulo_home h1 {
+        font-size: 2.9rem;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-left: -30px;
+    }
+
+    .descricao_home {
+        margin: 0 auto;
+        width: 390px;
+        margin-top: 65px;
+        margin-left: -30px;
+    }
+
+    .descricao_home p {
+        text-align: start;
+    }
+
+    .caixa_btn_home {
+        margin-left: -30px;
+    }
+}
+
+/****************************** FIM SEÇÃO HOME ******************************/
+
+/****/
+
+/****/
+
+/****************************** INICIO SEÇÃO NOVOS PRODUTOS ******************************/
+
+#container_novosProdutos {
+    width: 100%;
+    height: 100vh;
+    margin-top: 90px;
+}
+
+.caixa_titulo_produtos {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: #dfdfdf;
+    padding-left: 90px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caixa_principal_novo_produto {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_itens_produto {
+    width: 260px;
+    height: 450px;
+    background: #1f1f1f;
+}
+
+.icon_produto {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.caixa_img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.caixa_titulo_item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.caixa_titulo_item h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ebebeb;
+    padding: 0 20px;
+}
+
+.caixa_descricao_item {
+    width: 100%;
+    height: 120px;
+    padding-left: 20px;
+}
+
+.caixa_descricao_item i {
+    color: #727272;
+}
+
+.caixa_star {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-top: 17px;
+}
+
+.caixa_preco {
+    width: 100%;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    color: #c3c3c3;
+}
+
+.caixa_btn_produto {
+    width: 100%;
+    height: 70px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_btn_produto button {
+    width: 220px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b27d49;
+    background: transparent;
+    border: 1.5px solid #b27d49;
+    cursor: pointer;
+}
+
+.caixa_btn_produto button:hover {
+    background: #b27d49;
+    color: #1f1f1f;
+    transition: all 0.8s;
+    -webkit-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    transform: scale(1.12);
+}
+
+@media screen and (max-width: 430px) {
+    #container_novosProdutos {
+        height: 261vh;
+    }
+
+    .caixa_principal_novo_produto {
+        flex-direction: column;
+        height: 250vh;
+    }
+}
+
+/****************************** FIM SEÇÃO NOVOS PRODUTOS ******************************/
+
+/****/
+
+/****/
+
+/****************************** INICIO SEÇÃO CATEGORIA ******************************/
+
+#container_categoria {
+    width: 100%;
+    height: 100vh;
+    margin-top: 90px;
+}
+
+.caixa_titulo_categoria {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: #dfdfdf;
+    padding-left: 90px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caixa_principal_categoria {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_left {
+    width: 715px;
+    height: 460px;
+}
+.caixa_secundaria_interna_left {
+    width: 715px;
+    height: 230px;
+    background: url(../imagens/vinho-rose.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+    border: 1px solid #1f1f1f;
+}
+
+.descricao_categoria_rose {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 179px;
+    opacity: 0.3;
+    background: #4b4646;
+}
+
+.descricao_categoria_rose h3 {
+    color: #fff;
+    opacity: 1;
+    padding-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.caixa_interna_left {
+    width: 715px;
+    height: 230px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.caixa_left_1 {
+    width: 350px;
+    height: 230px;
+    background: url(../imagens/vinho-tinto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: 1.5px solid #1f1f1f;
+}
+
+.descricao_categoria {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 179px;
+    opacity: 0.3;
+    background: #4b4646;
+}
+
+.descricao_categoria h3 {
+    color: #fff;
+    opacity: 1;
+    padding-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.caixa_left_2 {
+    width: 350px;
+    height: 230px;
+    background: url(../imagens/vinho-branco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: 1px solid #1f1f1f;
+}
+
+.caixa_right {
+    width: 350px;
+    height: 460px;
+    background: url(../imagens/vinho-espumante.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: 1px solid #1f1f1f;
+}
+
+.descricao_categoria_espumante {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 409px;
+    opacity: 0.3;
+    background: #4b4646;
+}
+
+.descricao_categoria_espumante h3 {
+    color: #fff;
+    opacity: 1;
+    padding-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 430px) {
+    #container_categoria {
+        height: 141vh;
+        margin-top: 15px;
+    }
+
+    .caixa_titulo_categoria h1 {
+        width: 340px;
+        margin-left: -80px;
+        text-align: center;
+    }
+
+    .caixa_principal_categoria {
+        flex-direction: column;
+        height: 130vh;
+    }
+
+    .caixa_interna_left {
+        flex-direction: column;
+    }
+
+    .caixa_secundaria_interna_left {
+        flex-direction: column;
+    }
+
+    .caixa_right {
+        flex-direction: column;
+    }
+}
+
+/****************************** FIM SEÇÃO CATEGORIA ******************************/
+
+/****/
+
+/****/
+
+/****************************** INICIO SEÇÃO PROMOÇÃO ******************************/
+
+#container_promocao {
+    width: 100%;
+    height: 100vh;
+    margin-top: 90px;
+}
+
+.caixa_titulo_promocao {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: #dfdfdf;
+    padding-left: 90px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caixa_principal_promocao {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_itens_promocao {
+    width: 260px;
+    height: 450px;
+    background: #1f1f1f;
+}
+
+.caixa_desconto {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.descricao_desconto h5 {
+    color: #fff;
+    padding: 2px 4px;
+    background-color: rgb(142, 7, 7);
+}
+
+.caixa_img_promocao {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.caixa_preco_item {
+    width: 100%;
+    height: 53px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: #c3c3c3;
+}
+
+.preco_desconto {
+    text-decoration: line-through;
+    color: rgb(142, 7, 7);
+}
+
+@media screen and (max-width: 430px) {
+    #container_promocao {
+        height: 261vh;
+    }
+
+    .caixa_titulo_promocao {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .caixa_principal_promocao {
+        flex-direction: column;
+        height: 250vh;
+    }
+}
+
+/****************************** FIM SEÇÃO PROMOÇÃO ******************************/
+
+/****/
+
+/****/
+
+/****************************** INICIO SEÇÃO IMG ADEGA ******************************/
+
+#container_img_adega {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_img_adega {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imagens/img-adega-vinho.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.descricao_adega {
+    width: 800px;
+    height: 350px;
+}
+
+.titulo_desconto {
+    width: 100%;
+    height: 120px;
+    color: #b27d49;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.descricao_desconto_img_adega {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c5c5c5;
+}
+
+@media screen and (max-width: 430px) {
+    #container_img_adega {
+        height: 101vh;
+    }
+
+    .titulo_desconto {
+        width: 350px;
+        margin: 0 auto;
+        margin-top: -120px;
+        font-size: 1.55rem;
+    }
+
+    .descricao_desconto_img_adega {
+        width: 360px;
+        height: 480px;
+        margin: 0 auto;
+    }
+
+    .caixa_img_adega {
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+/****************************** FIM SEÇÃO IMG ADEGA ******************************/
+
+/****/
+
+/****/
+
+/****************************** INICIO SEÇÃO ANALISE ******************************/
+
+#container_analise {
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+}
+
+.caixa_titulo_analise {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: #dfdfdf;
+    padding-left: 90px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caixa_principal_analise {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_items_analise {
+    width: 350px;
+    height: 460px;
+    background: #1f1f1f;
+}
+
+.caixa_img_analise {
+    width: 350px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao_analise {
+    width: 100%;
+    height: 229px;
+    padding: 10px 10px;
+    color: #c3c3c3;
+}
+
+@media screen and (max-width: 430px) {
+    #container_analise {
+        height: 201vh;
+    }
+
+    .caixa_titulo_analise {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .caixa_principal_analise {
+        height: 190vh;
+        flex-direction: column;
+    }
+}
+
+/****************************** FIM SEÇÃO ANALISE ******************************/
+
+/****/
+
+/****/
+
+/****************************** INICIO SEÇÃO HISTORIA ******************************/
+
+#container_historia {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.caixa_principal_historia {
+    width: 100%;
+    height: 570px;
+    display: flex;
+    gap: 135px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_left_historia {
+    width: 480px;
+    height: 550px;
+}
+
+.caixa_titulo_historia {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.caixa_titulo_historia h1 {
+    color: #dfdfdf;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.caixa_linha_separacao {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.linha_separacao {
+    width: 300px;
+    height: 1px;
+    border: 1px solid #4b4646;
+}
+
+.caixa_descricao_historia {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.caixa_descricao_historia i {
+    color: #727272;
+}
+
+.caixa_right_historia {
+    width: 480px;
+    height: 550px;
+    background: url(../imagens/img-historia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 430px) {
+    #container_historia {
+        height: 165vh;
+    }
+
+    .caixa_titulo_historia {
+        width: 300px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .caixa_linha_separacao {
+        width: 300px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .caixa_principal_historia {
+        flex-direction: column;
+        height: 163vh;
+    }
+
+    .caixa_descricao_historia {
+        width: 350px;
+        margin: 0 auto;
+        height: 550px;
+    }
+}
+
+/****************************** FIM SEÇÃO HISTORIA ******************************/
+
+/****/
+
+/****/
+
+/****************************** INICIO SEÇÃO BLOG ******************************/
+
+#container_blog {
+    width: 100%;
+    height: 50vh;
+    margin-top: 90px;
+}
+
+.titulo_blog {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: #dfdfdf;
+    padding-left: 90px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caixa_principal_blog {
+    width: 100%;
+    height: 217px;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_descricao_blog {
+    width: 330px;
+    height: 200px;
+    background: #1f1f1f;
+}
+
+.caixa_imgPessoa_nome {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.caixa_nome_pessoa {
+    color: #c3c3c3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.descricao_blog {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.descricao_blog i {
+    color: #727272;
+}
+
+.caixa_img_pessoa_1 {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    background: url(../imagens/pessoa-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.caixa_img_pessoa_2 {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    background: url(../imagens/pessoa-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.caixa_img_pessoa_3 {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    background: url(../imagens/pessoa-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 430px) {
+    #container_blog {
+        height: 106vh;
+    }
+
+    .titulo_blog {
+        padding-left: 145px;
+    }
+
+    .caixa_principal_blog {
+        height: 95vh;
+        flex-direction: column;
+    }
+}
+
+/****************************** FIM SEÇÃO BLOG ******************************/
+
+/****/
+
+/****/
+
+/****************************** INICIO SEÇÃO FORMULARIO ******************************/
+
+form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.caixa_principal_form {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_left_form {
+    width: 545px;
+    height: 480px;
+    background: url(../imagens/img-form.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caixa_right_form {
+    width: 545px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_form {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.caixa_titulo_form {
+    width: 270px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_titulo_form h2 {
+    color: #727272;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+
+.descricao_form {
+    width: 270px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #727272;
+    text-align: center;
+    padding: 0 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caixa_input {
+    width: 270px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 5px;
+    border: 1px solid #727272;
+}
+
+.input_nome {
+    width: 200px;
+    height: 25px;
+    border: none;
+    color: #727272;
+    background: transparent;
+}
+
+.caixa_btn_form {
+    width: 270px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border: none;
+}
+
+.caixa_btn_form button {
+    width: 200px;
+    height: 30px;
+    color: #b27d49;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid #b27d49;
+    cursor: pointer;
+}
+
+.caixa_btn_form button:hover {
+    background: #b27d49;
+    color: #1f1f1f;
+    transition: all 0.8s;
+    -webkit-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    transform: scale(1.12);
+}
+
+@media screen and (max-width: 430px) {
+    form {
+        height: 116vh;
+    }
+
+    .caixa_principal_form {
+        flex-direction: column-reverse;
+    }
+}
+
+/****************************** FIM SEÇÃO FORMULARIO ******************************/
+
+/****/
+
+/****/
+
+/****************************** INICIO SEÇÃO FOOTER ******************************/
+
+footer {
+    width: 100%;
+    height: 70vh;
+    background: rgb(0, 10, 12);
+}
+
+.caixa_titulo_footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: #b27d49;
+    padding-left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caixa_principal_footer {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/** INICIO CAIXA FOOTER LEFT **/
+
+.caixa_footer_left {
+    width: 200px;
+    height: 230px;
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
+}
+
+.caixa_footer_left a {
+    color: #c3c3c3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.caixa_footer_left a:hover {
+    color: #b27d49;
+}
+
+/** FIM CAIXA FOOTER LEFT **/
+
+/****/
+
+/** INICIO CAIXA FOOTER CENTER **/
+
+.caixa_footer_center {
+    width: 200px;
+    height: 230px;
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
+}
+
+.caixa_footer_center a {
+    color: #c3c3c3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.caixa_footer_center a:hover {
+    color: #b27d49;
+}
+
+/** FIM CAIXA FOOTER CENTER **/
+
+/****/
+
+/** INICIO CAIXA FOOTER RIGHT **/
+
+.caixa_footer_right {
+    width: 200px;
+    height: 230px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.caixa_localizacao_footer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #c3c3c3;
+}
+
+.caixa_whatsapp_footer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #c3c3c3;
+}
+
+.caixa_emali_footer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #c3c3c3;
+}
+
+.caixa_contato_footer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #b27d49;
+}
+
+/** FIM CAIXA FOOTER RIGHT **/
+
+.caixa_notificacao_footer {
+    width: 300px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_principal_promocao_footer {
+    width: 260px;
+    height: 200px;
+}
+
+.caixa_titulo_notificacao {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c3c3c3;
+    font-size: 15px;
+}
+
+.caixa_input_footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_input_footer input {
+    width: 210px;
+    height: 30px;
+    color: #c3c3c3;
+    background: transparent;
+    border: 1px solid #727272;
+}
+
+.caixa_input_footer ::placeholder {
+    padding-left: 10px;
+}
+
+.caixa_btn_footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_btn_footer button {
+    width: 100px;
+    height: 20px;
+    color: #b27d49;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid #b27d49;
+    cursor: pointer;
+}
+
+.caixa_btn_footer button:hover {
+    background: #b27d49;
+    color: #1f1f1f;
+    transition: all 0.8s;
+    -webkit-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    transform: scale(1.12);
+}
+
+.caixa_icone_footer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 22px;
+}
+
+@media screen and (max-width: 430px) {
+    footer {
+        height: 155vh;
+    }
+
+    .caixa_principal_footer {
+        flex-direction: column;
+        height: 115vh;
+    }
+
+    .caixa_titulo_footer {
+        width: 350px;
+        margin:  0 auto;
+        padding-left: 90px;
+    }
+
+    .caixa_footer_left {
+        margin-left: -120px;
+    }
+
+    .caixa_footer_center {
+        margin-top: -20px;
+        height: 170px;
+        margin-left: -120px;
+    }
+
+    .caixa_footer_right {
+        margin-top: -20px;
+        height: 145px;
+        margin-left: -120px;
+    }
+
+    .caixa_notificacao_footer {
+        margin-top: -20px;
+    }
+
+    .caixa_icone_footer a {
+        margin-top: 5px;
+        padding-left: 28.5px;
+    }
+}
+
+/****************************** FIM SEÇÃO FOOTER ******************************/
+
+.linha_separacao_footer {
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    border: 1px dotted #4b4646;
+}
+
+.caixa_descricao_desenvolvedor {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.caixa_nome_desenvolvedor {
+    color: #c3c3c3;
+    font-weight: bold;
+}
+
+.caixa_nome_desenvolvedor span {
+    color: #b27d49;
+}
+
+.whatsapp_desenvolvedor {
+    color: #c3c3c3;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.Email_desenvolvedor {
+    color: #c3c3c3;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+@media screen and (max-width: 430px) {
+    .caixa_descricao_desenvolvedor {
+        flex-direction: column;
+        height: 15vh;
+    }
+}
+
+/****************************** INICIO SEÇÃO SCRIPTS.JS ******************************/
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all .5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2.5s;
+}
+
+/****************************** FIM SEÇÃO SCRIPTS.JS ******************************/
